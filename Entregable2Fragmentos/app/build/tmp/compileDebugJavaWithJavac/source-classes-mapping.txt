@@ -1,0 +1,16 @@
+com/example/entregable2fragmentos/databinding/FragmentFifthBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentFifthBinding
+com/example/entregable2fragmentos/databinding/FragmentFourthBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentFourthBinding
+com/example/entregable2fragmentos/BuildConfig.java
+ com.example.entregable2fragmentos.BuildConfig
+com/example/entregable2fragmentos/databinding/ActivityMainBinding.java
+ com.example.entregable2fragmentos.databinding.ActivityMainBinding
+com/example/entregable2fragmentos/databinding/FragmentFirstBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentFirstBinding
+com/example/entregable2fragmentos/databinding/ContentMainBinding.java
+ com.example.entregable2fragmentos.databinding.ContentMainBinding
+com/example/entregable2fragmentos/databinding/FragmentThirdBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentThirdBinding
+com/example/entregable2fragmentos/databinding/FragmentSecondBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentSecondBinding

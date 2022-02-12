@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.entregable2fragmentos"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:5:5-23:19
+12        android:allowBackup="true"
+12-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\ercas\.gradle\caches\transforms-3\22fc58c1aba25a38624b19fcaec4a163\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.Entregable2Fragmentos" >
+21-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:11:9-59
+22        <activity
+22-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:12:9-22:20
+23            android:name="com.example.entregable2fragmentos.MainActivity"
+23-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:13:13-41
+24            android:exported="true"
+24-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:14:13-36
+25            android:label="@string/app_name"
+25-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:15:13-45
+26            android:theme="@style/Theme.Entregable2Fragmentos.NoActionBar" >
+26-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:16:13-75
+27            <intent-filter>
+27-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:17:13-21:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:18:17-69
+28-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:18:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:20:17-77
+30-->C:\Users\ercas\Documents\GitHub\AppConDB\Entregable2Fragmentos\app\src\main\AndroidManifest.xml:20:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <service
+34-->[androidx.room:room-runtime:2.3.0] C:\Users\ercas\.gradle\caches\transforms-3\2ec1915d280d38828f359d963b673a57\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+35            android:name="androidx.room.MultiInstanceInvalidationService"
+35-->[androidx.room:room-runtime:2.3.0] C:\Users\ercas\.gradle\caches\transforms-3\2ec1915d280d38828f359d963b673a57\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+36            android:directBootAware="true"
+36-->[androidx.room:room-runtime:2.3.0] C:\Users\ercas\.gradle\caches\transforms-3\2ec1915d280d38828f359d963b673a57\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+37            android:exported="false" />
+37-->[androidx.room:room-runtime:2.3.0] C:\Users\ercas\.gradle\caches\transforms-3\2ec1915d280d38828f359d963b673a57\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+41            android:authorities="com.example.entregable2fragmentos.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\ercas\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ercas\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ercas\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\ercas\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+49        </provider>
+50    </application>
+51
+52</manifest>
