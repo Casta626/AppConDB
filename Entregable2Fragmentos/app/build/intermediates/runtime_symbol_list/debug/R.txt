@@ -2001,6 +2001,8 @@ int id checkBox 0x7f09007c
 int id checkBox2 0x7f09007d
 int id checkBox3 0x7f09007e
 int id checkBox4 0x7f09007f
+int id checkBox5 0x7f090217
+int id checkBox6 0x7f090218
 int id checkbox 0x7f090080
 int id checked 0x7f090081
 int id chip 0x7f090082
@@ -2341,10 +2343,9 @@ int id textSpacerNoButtons 0x7f0901d0
 int id textSpacerNoTitle 0x7f0901d1
 int id textStart 0x7f0901d2
 int id textTop 0x7f0901d3
+int id textView1 0x7f090215
 int id textView10 0x7f0901d4
-int id textView12 0x7f0901d5
-int id textView13 0x7f0901d6
-int id textView14 0x7f0901d7
+int id textView2 0x7f090216
 int id textView3 0x7f0901d8
 int id textView4 0x7f0901d9
 int id textView5 0x7f0901da
@@ -2555,6 +2556,7 @@ int layout notification_template_media 0x7f0c0069
 int layout notification_template_media_custom 0x7f0c006a
 int layout notification_template_part_chronometer 0x7f0c006b
 int layout notification_template_part_time 0x7f0c006c
+int layout recycler_view_item 0x7f0c0080
 int layout select_dialog_item_material 0x7f0c006d
 int layout select_dialog_multichoice_material 0x7f0c006e
 int layout select_dialog_singlechoice_material 0x7f0c006f

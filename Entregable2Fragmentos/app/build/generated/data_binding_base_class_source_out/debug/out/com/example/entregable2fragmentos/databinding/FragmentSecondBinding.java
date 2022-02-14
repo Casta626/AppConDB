@@ -55,15 +55,6 @@ public final class FragmentSecondBinding implements ViewBinding {
   public final TextView textView10;
 
   @NonNull
-  public final TextView textView12;
-
-  @NonNull
-  public final TextView textView13;
-
-  @NonNull
-  public final TextView textView14;
-
-  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -89,8 +80,7 @@ public final class FragmentSecondBinding implements ViewBinding {
       @NonNull EditText editTextTextPersonName2, @NonNull EditText editTextTextPersonName3,
       @NonNull EditText editTextTextPersonName4, @NonNull EditText editTextTextPersonName5,
       @NonNull EditText editTextTextPersonName6, @NonNull EditText editTextTextPersonName7,
-      @NonNull TextView f2t1, @NonNull TextView textView10, @NonNull TextView textView12,
-      @NonNull TextView textView13, @NonNull TextView textView14, @NonNull TextView textView3,
+      @NonNull TextView f2t1, @NonNull TextView textView10, @NonNull TextView textView3,
       @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
       @NonNull TextView textView7, @NonNull TextView textView9, @NonNull TextView tv2) {
     this.rootView = rootView;
@@ -105,9 +95,6 @@ public final class FragmentSecondBinding implements ViewBinding {
     this.editTextTextPersonName7 = editTextTextPersonName7;
     this.f2t1 = f2t1;
     this.textView10 = textView10;
-    this.textView12 = textView12;
-    this.textView13 = textView13;
-    this.textView14 = textView14;
     this.textView3 = textView3;
     this.textView4 = textView4;
     this.textView5 = textView5;
@@ -210,24 +197,6 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView12;
-      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
-      if (textView12 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView13;
-      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
-      if (textView13 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView14;
-      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
-      if (textView14 == null) {
-        break missingId;
-      }
-
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -273,8 +242,8 @@ public final class FragmentSecondBinding implements ViewBinding {
       return new FragmentSecondBinding((ConstraintLayout) rootView, button2, editTextPhone,
           editTextTextEmailAddress, editTextTextPersonName2, editTextTextPersonName3,
           editTextTextPersonName4, editTextTextPersonName5, editTextTextPersonName6,
-          editTextTextPersonName7, f2t1, textView10, textView12, textView13, textView14, textView3,
-          textView4, textView5, textView6, textView7, textView9, tv2);
+          editTextTextPersonName7, f2t1, textView10, textView3, textView4, textView5, textView6,
+          textView7, textView9, tv2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

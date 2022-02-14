@@ -106,5 +106,9 @@
     {
         "merged": "C:\\Users\\ercas\\Documents\\GitHub\\AppConDB\\Entregable2Fragmentos\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ercas\\Documents\\GitHub\\AppConDB\\Entregable2Fragmentos\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ercas\\Documents\\GitHub\\AppConDB\\Entregable2Fragmentos\\app\\build\\intermediates\\merged_res\\debug\\layout_recycler_view_item.xml.flat",
+        "source": "C:\\Users\\ercas\\Documents\\GitHub\\AppConDB\\Entregable2Fragmentos\\app\\src\\main\\res\\layout\\recycler_view_item.xml"
     }
 ]

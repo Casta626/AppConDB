@@ -43,4 +43,5 @@ class FifthFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

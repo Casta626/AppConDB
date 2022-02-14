@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.entregable2fragmentos.databinding.FragmentThirdBinding
@@ -45,6 +46,8 @@ class ThirdFragment : Fragment() {
         binding.button3.setOnClickListener {
             if (pago==1) {
                 findNavController().navigate(R.id.action_thirdFragment_to_fourthFragment, bundle)
+                ObtenerDatos()
+
             }else{
                 findNavController().navigate(R.id.action_thirdFragment_to_fifthFragment, bundle)
             }
@@ -55,5 +58,10 @@ class ThirdFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+    fun ObtenerDatos(){
+        var literales = resources.getStringArray(R.array.literales)
+        //binding.tvliterales = binding.tvliterales)
+        //tvliterales.setText(literales[0]+literales[1]+literales[2])
     }
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,12 +25,20 @@ public final class FragmentThirdBinding implements ViewBinding {
   public final Button button3;
 
   @NonNull
+  public final CheckBox checkBox5;
+
+  @NonNull
+  public final CheckBox checkBox6;
+
+  @NonNull
   public final TextView tv3;
 
   private FragmentThirdBinding(@NonNull ConstraintLayout rootView, @NonNull Button button3,
-      @NonNull TextView tv3) {
+      @NonNull CheckBox checkBox5, @NonNull CheckBox checkBox6, @NonNull TextView tv3) {
     this.rootView = rootView;
     this.button3 = button3;
+    this.checkBox5 = checkBox5;
+    this.checkBox6 = checkBox6;
     this.tv3 = tv3;
   }
 
@@ -66,13 +75,26 @@ public final class FragmentThirdBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checkBox5;
+      CheckBox checkBox5 = ViewBindings.findChildViewById(rootView, id);
+      if (checkBox5 == null) {
+        break missingId;
+      }
+
+      id = R.id.checkBox6;
+      CheckBox checkBox6 = ViewBindings.findChildViewById(rootView, id);
+      if (checkBox6 == null) {
+        break missingId;
+      }
+
       id = R.id.tv3;
       TextView tv3 = ViewBindings.findChildViewById(rootView, id);
       if (tv3 == null) {
         break missingId;
       }
 
-      return new FragmentThirdBinding((ConstraintLayout) rootView, button3, tv3);
+      return new FragmentThirdBinding((ConstraintLayout) rootView, button3, checkBox5, checkBox6,
+          tv3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

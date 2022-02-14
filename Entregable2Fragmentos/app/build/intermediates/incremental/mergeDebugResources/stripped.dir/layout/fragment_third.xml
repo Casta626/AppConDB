@@ -44,4 +44,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7" />
 
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Tarjeta de Credito/Débito"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="PayPal"
+        app:layout_constraintStart_toStartOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

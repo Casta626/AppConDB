@@ -1,5 +1,6 @@
 package com.example.entregable2fragmentos
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -8,8 +9,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.TextView
+import androidx.core.app.ShareCompat
 import com.example.entregable2fragmentos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -35,11 +38,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Aqui creamos y ponemos los literales para ponerlos en pantalla del cuarto fragmento.
-        /**
-        var literales = resources.getStringArray(R.array.literales)
-        var tvliterales = findViewById<TextView>(R.id.tvliterales)
-        tvliterales.setText(literales[0]+literales[1]+literales[2])
-        */
+
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -63,4 +64,41 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+    fun ObtenerDatos(){
+        var literales = resources.getStringArray(R.array.literales)
+        var tvliterales = findViewById<TextView>(R.id.tvliterales)
+        tvliterales.setText(literales[0]+literales[1]+literales[2])
+    }
+
+    private fun getShareIntent() : Intent {
+        val args = SecondFragment.fromBundle(requireArguments())
+        return ShareCompat.IntentBuilder.from(activity!!)
+            .setText(getString(R.string.share_success_text, args.numCorrect, args.numQuestions))
+            .setType("text/plain")
+            .intent
+    }
+
+    private fun shareSuccess() {
+        startActivity(getShareIntent())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.winner_menu, menu)
+        // check if the activity resolves
+        if (null == getShareIntent().resolveActivity(requireActivity().packageManager)) {
+            // hide the menu item if it doesn't resolve
+            menu.findItem(R.id.share)?.isVisible = false
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.share -> shareSuccess()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+}
+
 }
