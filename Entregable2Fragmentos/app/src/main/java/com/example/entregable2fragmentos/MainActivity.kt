@@ -1,6 +1,8 @@
 package com.example.entregable2fragmentos
 
+import android.app.SearchManager
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.TextView
 import androidx.core.app.ShareCompat
 import com.example.entregable2fragmentos.databinding.ActivityMainBinding
@@ -35,11 +38,15 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
         }
 
         //Aqui creamos y ponemos los literales para ponerlos en pantalla del cuarto fragmento.
 
-
+        //val botonPaginaWeb = findViewById<Button>(R.id.botonPaginaWeb)
+        //botonPaginaWeb.setOnClickListener { mandarPaginaWeb() }
+        //val boton3 = findViewById<Button>(R.id.button_3)
+        //boton3.setOnClickListener{obtenerDatos()}
 
     }
 
@@ -65,40 +72,25 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 
-    fun ObtenerDatos(){
+    fun obtenerDatos(){
         var literales = resources.getStringArray(R.array.literales)
         var tvliterales = findViewById<TextView>(R.id.tvliterales)
         tvliterales.setText(literales[0]+literales[1]+literales[2])
     }
 
-    private fun getShareIntent() : Intent {
-        val args = SecondFragment.fromBundle(requireArguments())
-        return ShareCompat.IntentBuilder.from(activity!!)
-            .setText(getString(R.string.share_success_text, args.numCorrect, args.numQuestions))
-            .setType("text/plain")
-            .intent
+    fun mandarPaginaWeb(){
+        searchWeb("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     }
 
-    private fun shareSuccess() {
-        startActivity(getShareIntent())
-    }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.winner_menu, menu)
-        // check if the activity resolves
-        if (null == getShareIntent().resolveActivity(requireActivity().packageManager)) {
-            // hide the menu item if it doesn't resolve
-            menu.findItem(R.id.share)?.isVisible = false
+
+    fun searchWeb(query: String) {
+        val intent = Intent(Intent.ACTION_WEB_SEARCH).apply {
+            putExtra(SearchManager.QUERY, query)
         }
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.share -> shareSuccess()
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
         }
-        return super.onOptionsItemSelected(item)
     }
 }
 
-}

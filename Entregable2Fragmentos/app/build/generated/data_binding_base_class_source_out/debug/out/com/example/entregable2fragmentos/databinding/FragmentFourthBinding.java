@@ -21,6 +21,9 @@ public final class FragmentFourthBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button botonPaginaWeb;
+
+  @NonNull
   public final Button button4;
 
   @NonNull
@@ -29,9 +32,10 @@ public final class FragmentFourthBinding implements ViewBinding {
   @NonNull
   public final TextView tvliterales;
 
-  private FragmentFourthBinding(@NonNull ConstraintLayout rootView, @NonNull Button button4,
-      @NonNull TextView tv4, @NonNull TextView tvliterales) {
+  private FragmentFourthBinding(@NonNull ConstraintLayout rootView, @NonNull Button botonPaginaWeb,
+      @NonNull Button button4, @NonNull TextView tv4, @NonNull TextView tvliterales) {
     this.rootView = rootView;
+    this.botonPaginaWeb = botonPaginaWeb;
     this.button4 = button4;
     this.tv4 = tv4;
     this.tvliterales = tvliterales;
@@ -64,6 +68,12 @@ public final class FragmentFourthBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.botonPaginaWeb;
+      Button botonPaginaWeb = ViewBindings.findChildViewById(rootView, id);
+      if (botonPaginaWeb == null) {
+        break missingId;
+      }
+
       id = R.id.button_4;
       Button button4 = ViewBindings.findChildViewById(rootView, id);
       if (button4 == null) {
@@ -82,7 +92,8 @@ public final class FragmentFourthBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentFourthBinding((ConstraintLayout) rootView, button4, tv4, tvliterales);
+      return new FragmentFourthBinding((ConstraintLayout) rootView, botonPaginaWeb, button4, tv4,
+          tvliterales);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1976,6 +1976,7 @@ int id beginOnFirstDraw 0x7f090063
 int id beginning 0x7f090064
 int id bestChoice 0x7f090065
 int id blocking 0x7f090066
+int id botonPaginaWeb 0x7f090219
 int id bottom 0x7f090067
 int id bounce 0x7f090068
 int id bounceBoth 0x7f090069
