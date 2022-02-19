@@ -15,10 +15,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 import androidx.core.app.ShareCompat
 import com.example.android.trackmysleepquality.database.Customers
 import com.example.entregable2fragmentos.CustomerObject.retrofitService
@@ -63,6 +60,8 @@ class MainActivity : AppCompatActivity() {
             mostrarDatosCliente()
         }
 
+
+
     }
 
     //val listResult = Propiedades.retrofitService.getProperties()
@@ -83,11 +82,24 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        val info = item.menuInfo as AdapterView.AdapterContextMenuInfo
+        return when (item.itemId) {
+            R.id.help -> {
+                (info.id)
+                true
+            }
+            else -> super.onContextItemSelected(item)
+        }
+    }
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+
 
     fun mostrarDatosCliente() {
         val listRecords = ArrayList<String>()

@@ -4,7 +4,7 @@ import retrofit2.http.GET
 
 interface DataCustomerService {
 
-    @GET("films")
+    @GET("dni")
     suspend fun getProperties(): List<Propiedades>
 
 }

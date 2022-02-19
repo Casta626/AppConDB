@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.trackmysleepquality.database
+package com.example.entregable2fragmentos
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

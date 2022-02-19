@@ -17,7 +17,6 @@
 package com.example.entregable2fragmentos
 
 import androidx.room.*
-import com.example.android.trackmysleepquality.database.Customers
 
 
 @Dao

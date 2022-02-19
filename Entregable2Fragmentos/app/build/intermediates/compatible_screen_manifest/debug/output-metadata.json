@@ -4,7 +4,7 @@
     "type": "COMPATIBLE_SCREEN_MANIFEST",
     "kind": "Directory"
   },
-  "applicationId": "com.example.entregable2fragmentos",
+  "applicationId": "gallego.morales.entrega",
   "variantName": "debug",
   "elements": []
 }

@@ -92,6 +92,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="help">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-374" />
+                            <option name="y" value="73" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="thirdFragment">
                     <value>
                       <LayoutPositions>
