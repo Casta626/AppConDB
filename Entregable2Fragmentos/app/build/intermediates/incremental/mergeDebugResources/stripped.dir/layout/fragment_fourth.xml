@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:text="visita nuesrta pagina web"
+        android:text="visita nuestra pagina web"
         app:layout_constraintBottom_toTopOf="@+id/button_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

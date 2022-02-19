@@ -25,10 +25,16 @@ public final class FragmentSecondBinding implements ViewBinding {
   public final Button button2;
 
   @NonNull
+  public final TextView dni;
+
+  @NonNull
   public final EditText editTextPhone;
 
   @NonNull
   public final EditText editTextTextEmailAddress;
+
+  @NonNull
+  public final EditText editTextTextPersonName;
 
   @NonNull
   public final EditText editTextTextPersonName2;
@@ -76,7 +82,8 @@ public final class FragmentSecondBinding implements ViewBinding {
   public final TextView tv2;
 
   private FragmentSecondBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull EditText editTextPhone, @NonNull EditText editTextTextEmailAddress,
+      @NonNull TextView dni, @NonNull EditText editTextPhone,
+      @NonNull EditText editTextTextEmailAddress, @NonNull EditText editTextTextPersonName,
       @NonNull EditText editTextTextPersonName2, @NonNull EditText editTextTextPersonName3,
       @NonNull EditText editTextTextPersonName4, @NonNull EditText editTextTextPersonName5,
       @NonNull EditText editTextTextPersonName6, @NonNull EditText editTextTextPersonName7,
@@ -85,8 +92,10 @@ public final class FragmentSecondBinding implements ViewBinding {
       @NonNull TextView textView7, @NonNull TextView textView9, @NonNull TextView tv2) {
     this.rootView = rootView;
     this.button2 = button2;
+    this.dni = dni;
     this.editTextPhone = editTextPhone;
     this.editTextTextEmailAddress = editTextTextEmailAddress;
+    this.editTextTextPersonName = editTextTextPersonName;
     this.editTextTextPersonName2 = editTextTextPersonName2;
     this.editTextTextPersonName3 = editTextTextPersonName3;
     this.editTextTextPersonName4 = editTextTextPersonName4;
@@ -137,6 +146,12 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.dni;
+      TextView dni = ViewBindings.findChildViewById(rootView, id);
+      if (dni == null) {
+        break missingId;
+      }
+
       id = R.id.editTextPhone;
       EditText editTextPhone = ViewBindings.findChildViewById(rootView, id);
       if (editTextPhone == null) {
@@ -146,6 +161,12 @@ public final class FragmentSecondBinding implements ViewBinding {
       id = R.id.editTextTextEmailAddress;
       EditText editTextTextEmailAddress = ViewBindings.findChildViewById(rootView, id);
       if (editTextTextEmailAddress == null) {
+        break missingId;
+      }
+
+      id = R.id.editTextTextPersonName;
+      EditText editTextTextPersonName = ViewBindings.findChildViewById(rootView, id);
+      if (editTextTextPersonName == null) {
         break missingId;
       }
 
@@ -239,11 +260,11 @@ public final class FragmentSecondBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSecondBinding((ConstraintLayout) rootView, button2, editTextPhone,
-          editTextTextEmailAddress, editTextTextPersonName2, editTextTextPersonName3,
-          editTextTextPersonName4, editTextTextPersonName5, editTextTextPersonName6,
-          editTextTextPersonName7, f2t1, textView10, textView3, textView4, textView5, textView6,
-          textView7, textView9, tv2);
+      return new FragmentSecondBinding((ConstraintLayout) rootView, button2, dni, editTextPhone,
+          editTextTextEmailAddress, editTextTextPersonName, editTextTextPersonName2,
+          editTextTextPersonName3, editTextTextPersonName4, editTextTextPersonName5,
+          editTextTextPersonName6, editTextTextPersonName7, f2t1, textView10, textView3, textView4,
+          textView5, textView6, textView7, textView9, tv2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
