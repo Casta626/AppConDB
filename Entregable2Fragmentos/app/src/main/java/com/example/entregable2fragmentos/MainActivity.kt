@@ -17,7 +17,6 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.core.app.ShareCompat
-import com.example.android.trackmysleepquality.database.Customers
 import com.example.entregable2fragmentos.CustomerObject.retrofitService
 import com.example.entregable2fragmentos.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
