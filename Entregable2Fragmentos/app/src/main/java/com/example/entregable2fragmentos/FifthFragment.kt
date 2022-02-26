@@ -64,15 +64,7 @@ class FifthFragment : Fragment() {
     private suspend fun getEstateProperties() {
         // Importo arriba el viewModelScopelaunch
        // viewModelScope.launch {
-            try {
-                val listResult = CustomerObject.retrofitService.getProperties()
-                _estado.value = "Success: ${listResult.size} Mars properties retrieved"
-                if (listResult.isNotEmpty()) {
-                    //Log.i("Error en el pago:::")
-                }
-            } catch (e: Exception) {
-                _estado.value = "Failure: ${e.message}"
-            }
+
         }
     //}
 

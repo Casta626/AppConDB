@@ -1,18 +1,34 @@
 com/example/entregable2fragmentos/databinding/FragmentFifthBinding.java
  com.example.entregable2fragmentos.databinding.FragmentFifthBinding
+com/example/entregable2fragmentos/DataBindingTriggerClass.java
+ com.example.entregable2fragmentos.DataBindingTriggerClass
 com/example/entregable2fragmentos/databinding/RecyclerViewItemBinding.java
  com.example.entregable2fragmentos.databinding.RecyclerViewItemBinding
 com/example/entregable2fragmentos/databinding/FragmentFourthBinding.java
  com.example.entregable2fragmentos.databinding.FragmentFourthBinding
 com/example/entregable2fragmentos/BuildConfig.java
  com.example.entregable2fragmentos.BuildConfig
-com/example/entregable2fragmentos/databinding/ActivityMainBinding.java
- com.example.entregable2fragmentos.databinding.ActivityMainBinding
-com/example/entregable2fragmentos/databinding/FragmentFirstBinding.java
- com.example.entregable2fragmentos.databinding.FragmentFirstBinding
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/example/entregable2fragmentos/BR.java
+ com.example.entregable2fragmentos.BR
 com/example/entregable2fragmentos/databinding/ContentMainBinding.java
  com.example.entregable2fragmentos.databinding.ContentMainBinding
 com/example/entregable2fragmentos/databinding/FragmentThirdBinding.java
  com.example.entregable2fragmentos.databinding.FragmentThirdBinding
+com/example/entregable2fragmentos/databinding/ActivityMainBinding.java
+ com.example.entregable2fragmentos.databinding.ActivityMainBinding
+com/example/entregable2fragmentos/databinding/FragmentFirstBinding.java
+ com.example.entregable2fragmentos.databinding.FragmentFirstBinding
+com/example/entregable2fragmentos/DataBinderMapperImpl.java
+ com.example.entregable2fragmentos.DataBinderMapperImpl
+ com.example.entregable2fragmentos.DataBinderMapperImpl$InnerBrLookup
+ com.example.entregable2fragmentos.DataBinderMapperImpl$InnerLayoutIdLookup
+com/example/entregable2fragmentos/databinding/HelpFragmentBinding.java
+ com.example.entregable2fragmentos.databinding.HelpFragmentBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 com/example/entregable2fragmentos/databinding/FragmentSecondBinding.java
  com.example.entregable2fragmentos.databinding.FragmentSecondBinding
